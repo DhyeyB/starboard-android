@@ -89,9 +89,7 @@ public class Login_Magic_link
 			// Click on 5
 			driver.findElement(By.xpath("//android.widget.TextView[@text='5']")).click();
 
-			// WebDriverWait wait2 = new WebDriverWait(driver, 20);
-
-			WebElement div2 = wait.until(ExpectedConditions
+			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Confirm your new PIN']")));
 
 			// Click on 1
@@ -145,20 +143,22 @@ public class Login_Magic_link
 		try
 
 		{
+			String currentDir = System.getProperty("user.dir");
+			System.out.println("Current working directory: " + currentDir);
 
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the caches
-			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // Virtul Device name
 			// cap.setCapability(MobileCapabilityType.DEVICE_NAME,"R9ZRA09AK2M");
 			cap.setCapability("ignoreHiddenApiPolicyError", true);
 			cap.setCapability("pageLoadStrategy", "none");
-			cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver");
+			// cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver"); // Server chrome driver Path
 			
-			//cap.setCapability("chromedriverExecutable", "/home/bs/Documents/starboard-dhyey-github/starboard-android/chromedriver-linux64/chromedriver");
+			cap.setCapability("chromedriverExecutable", currentDir + "/chromedriver-linux64/chromedriver"); // Local chrome driver Path
 
-			cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev.apk");
-			//cap.setCapability("app", "/home/bs/Documents/starboard-dhyey-github/starboard-android/apk/Starboard-dev.apk");
+			// cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev.apk"); // Server App Path
+			cap.setCapability("app", currentDir + "/apk/Starboard-dev.apk"); // Local App Path
 			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
 
@@ -204,10 +204,18 @@ public class Login_Magic_link
         long freeMemory = runtime.freeMemory();
         // Maximum memory that the JVM can use in bytes
         long maxMemory = runtime.maxMemory();
+
         // Print memory information
         System.out.println("Total Memory: " + totalMemory + " bytes");
         System.out.println("Free Memory: " + freeMemory + " bytes");
         System.out.println("Max Memory: " + maxMemory + " bytes");
+
+		int cores = Runtime.getRuntime().availableProcessors();
+		System.out.println("Run time Core system: " + cores );
+
+		String arch = System.getProperty("os.arch");
+		System.out.println("Run time Core system 2: " + arch );
+
         
 		// driver.terminateApp("com.google.android.gm");
 
