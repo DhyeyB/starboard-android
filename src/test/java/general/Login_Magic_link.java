@@ -153,12 +153,12 @@ public class Login_Magic_link
 			// cap.setCapability(MobileCapabilityType.DEVICE_NAME,"R9ZRA09AK2M");
 			cap.setCapability("ignoreHiddenApiPolicyError", true);
 			cap.setCapability("pageLoadStrategy", "none");
-			//cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver");
+			cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver");
 			
-			cap.setCapability("chromedriverExecutable", "/home/bs/Documents/starboard-dhyey-github/starboard-android/chromedriver-linux64/chromedriver");
+			//cap.setCapability("chromedriverExecutable", "/home/bs/Documents/starboard-dhyey-github/starboard-android/chromedriver-linux64/chromedriver");
 
-			//cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev.apk");
-			cap.setCapability("app", "/home/bs/Documents/starboard-dhyey-github/starboard-android/apk/Starboard-dev.apk");
+			cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev.apk");
+			//cap.setCapability("app", "/home/bs/Documents/starboard-dhyey-github/starboard-android/apk/Starboard-dev.apk");
 			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
 
@@ -168,7 +168,7 @@ public class Login_Magic_link
 			
 			System.out.println(" waiting to click ");
 			
-			Thread.sleep(60000);
+			Thread.sleep(30000);
 			System.out.println("waiting done");
 			
 			driver.navigate().to(magic_link);
