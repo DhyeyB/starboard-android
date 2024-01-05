@@ -154,6 +154,7 @@ public class Login_Magic_link
 			// cap.setCapability(MobileCapabilityType.DEVICE_NAME,"R9ZRA09AK2M");
 			cap.setCapability("ignoreHiddenApiPolicyError", true);
 			cap.setCapability("pageLoadStrategy", "none");
+			cap.setCapability("uiautomator2ServerLaunchTimeout", 90000);
 			// cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver"); // Server chrome driver Path
 			
 			cap.setCapability("chromedriverExecutable", currentDir + "/chromedriver-linux64/chromedriver"); // Local chrome driver Path
