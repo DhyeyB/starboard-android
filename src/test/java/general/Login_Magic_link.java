@@ -179,6 +179,8 @@ public class Login_Magic_link
 
 			System.out.println(" clicked on magic link");
 
+			WebDriverWait wait = new WebDriverWait(driver, 100);
+
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Enter your new PIN']")));
 
