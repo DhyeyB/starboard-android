@@ -51,6 +51,7 @@ jobs:
             # adb devices
             # sdkmanager --list | grep system-images
             # avdmanager list device
+            sleep 30
             mvn clean test
 
       - name: Upload Appium Logs
