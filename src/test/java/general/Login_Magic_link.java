@@ -165,8 +165,6 @@ public class Login_Magic_link
 
 			System.out.println(" App insatlled and open for first time");
 
-			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
-			
 			String magic_link = new send_request().sendRequest();
 			
 			System.out.println(" waiting to click ");
@@ -174,6 +172,8 @@ public class Login_Magic_link
 			Thread.sleep(30000);
 
 			System.out.println("waiting done");
+
+			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);			
 			
 			driver.navigate().to(magic_link);
 
