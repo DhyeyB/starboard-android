@@ -158,9 +158,11 @@ public class Login_Magic_link
 			cap.setCapability("chromedriverExecutable", currentDir + "/chromedriver-linux64/chromedriver"); // Local chrome driver Path
 
 			// cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev.apk"); // Server App Path
-			cap.setCapability("app", currentDir + "/apk/Starboard-dev.apk"); // Local App Path
+			cap.setCapability("app", currentDir + "/apk/Starboard-dev1.apk"); // Local App Path
 			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
+
+			System.out.println(" App insatlled and open for first time");
 
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
 
@@ -169,9 +171,11 @@ public class Login_Magic_link
 			System.out.println(" waiting to click ");
 			
 			Thread.sleep(30000);
+
 			System.out.println("waiting done");
 			
 			driver.navigate().to(magic_link);
+
 			System.out.println(" clicked on magic link");
 
 		}
