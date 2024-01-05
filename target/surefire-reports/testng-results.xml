@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[==========Starboard Application closed==========]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-01-05T11:52:04 IST" name="StarboardSuite" finished-at="2024-01-05T11:52:16 IST" duration-ms="12106">
+    <groups>
+    </groups>
+    <test started-at="2024-01-05T11:52:04 IST" name="Starboard_test_cases" finished-at="2024-01-05T11:52:16 IST" duration-ms="12106">
+      <class name="general.Login_Magic_link">
+        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@40620d8e]" started-at="2024-01-05T11:50:36 IST" name="LoginTOApplication" finished-at="2024-01-05T11:52:04 IST" duration-ms="87438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTOApplication -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@40620d8e]" started-at="2024-01-05T11:52:16 IST" name="TearDown" finished-at="2024-01-05T11:52:16 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==========Starboard Application closed==========]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- general.Login_Magic_link -->
+      <class name="general.Add_Location">
+        <test-method signature="Update_location()[pri:1, instance:general.Add_Location@1a1ed4e5]" started-at="2024-01-05T11:52:04 IST" name="Update_location" finished-at="2024-01-05T11:52:16 IST" duration-ms="11928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Update_location -->
+      </class> <!-- general.Add_Location -->
+    </test> <!-- Starboard_test_cases -->
+  </suite> <!-- StarboardSuite -->
+</testng-results>
