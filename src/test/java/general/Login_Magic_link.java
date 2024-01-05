@@ -143,8 +143,8 @@ public class Login_Magic_link
 		try
 
 		{
-			String currentDir = System.getProperty("user.dir");
-			System.out.println("Current working directory: " + currentDir);
+			//String currentDir = System.getProperty("user.dir");
+			//System.out.println("Current working directory: " + currentDir);
 
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
@@ -153,19 +153,20 @@ public class Login_Magic_link
 			// cap.setCapability(MobileCapabilityType.DEVICE_NAME,"R9ZRA09AK2M");
 			cap.setCapability("ignoreHiddenApiPolicyError", true);
 			cap.setCapability("pageLoadStrategy", "none");
-			// cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver"); // Server chrome driver Path
 			
-			cap.setCapability("chromedriverExecutable", currentDir + "/chromedriver-linux64/chromedriver"); // Local chrome driver Path
+			cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver"); // Server chrome driver Path
+			
+			//cap.setCapability("chromedriverExecutable", currentDir + "/chromedriver-linux64/chromedriver"); // Local chrome driver Path
 
-			// cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev.apk"); // Server App Path
-			cap.setCapability("app", currentDir + "/apk/Starboard-dev1.apk"); // Local App Path
+			cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev1.apk"); // Server App Path
+			//cap.setCapability("app", currentDir + "/apk/Starboard-dev1.apk"); // Local App Path
 			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
 
 			System.out.println(" App insatlled and open for first time");
 
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
-
+			
 			String magic_link = new send_request().sendRequest();
 			
 			System.out.println(" waiting to click ");
@@ -221,7 +222,7 @@ public class Login_Magic_link
 		System.out.println("Run time Core system 2: " + arch );
 
         
-		// driver.terminateApp("com.google.android.gm");
+		//driver.terminateApp("com.google.android.gm");
 
 		//Reporter.log("==========Gmail Application closed==========", true);
 
