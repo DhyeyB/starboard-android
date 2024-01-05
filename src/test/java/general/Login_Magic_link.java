@@ -168,7 +168,7 @@ public class Login_Magic_link
 			
 			System.out.println(" waiting to click ");
 			
-			//Thread.sleep(30000);
+			Thread.sleep(30000);
 			System.out.println("waiting done");
 			
 			driver.navigate().to(magic_link);
