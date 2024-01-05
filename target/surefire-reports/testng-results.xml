@@ -5,16 +5,16 @@
       <![CDATA[==========Starboard Application closed==========]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-05T15:04:12 IST" name="StarboardSuite" finished-at="2024-01-05T15:05:03 IST" duration-ms="51470">
+  <suite started-at="2024-01-05T15:19:21 IST" name="StarboardSuite" finished-at="2024-01-05T15:20:12 IST" duration-ms="51691">
     <groups>
     </groups>
-    <test started-at="2024-01-05T15:04:12 IST" name="Starboard_test_cases" finished-at="2024-01-05T15:05:03 IST" duration-ms="51470">
+    <test started-at="2024-01-05T15:19:21 IST" name="Starboard_test_cases" finished-at="2024-01-05T15:20:12 IST" duration-ms="51691">
       <class name="general.Login_Magic_link">
-        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@27ead29e]" started-at="2024-01-05T15:01:20 IST" name="LoginTOApplication" finished-at="2024-01-05T15:04:12 IST" duration-ms="171313" status="PASS">
+        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@65f00478]" started-at="2024-01-05T15:16:57 IST" name="LoginTOApplication" finished-at="2024-01-05T15:19:21 IST" duration-ms="144108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTOApplication -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@27ead29e]" started-at="2024-01-05T15:05:03 IST" name="TearDown" finished-at="2024-01-05T15:05:03 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@65f00478]" started-at="2024-01-05T15:20:12 IST" name="TearDown" finished-at="2024-01-05T15:20:12 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==========Starboard Application closed==========]]>
@@ -23,7 +23,7 @@
         </test-method> <!-- TearDown -->
       </class> <!-- general.Login_Magic_link -->
       <class name="general.Add_Location">
-        <test-method signature="Update_location()[pri:1, instance:general.Add_Location@27abb83e]" started-at="2024-01-05T15:04:12 IST" name="Update_location" finished-at="2024-01-05T15:05:03 IST" duration-ms="51342" status="FAIL">
+        <test-method signature="Update_location()[pri:1, instance:general.Add_Location@1efdcd5]" started-at="2024-01-05T15:19:21 IST" name="Update_location" finished-at="2024-01-05T15:20:12 IST" duration-ms="51596" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Transactions'] (tried for 20 second(s) with 500 milliseconds interval)]]>
