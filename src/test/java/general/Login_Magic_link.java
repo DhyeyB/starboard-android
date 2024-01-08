@@ -126,6 +126,7 @@ public class Login_Magic_link
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Home']")));
 
+
 		}
 
 		catch (Exception e1)
