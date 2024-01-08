@@ -70,6 +70,8 @@ public class Login_Magic_link
 
 			WebDriverWait wait = new WebDriverWait(driver, 100);
 
+			System.out.println(" your are in login void");
+
 			// Enter Your PIN
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Enter your new PIN']")));
@@ -174,6 +176,9 @@ public class Login_Magic_link
 			driver.navigate().to(magic_link);
 			
 			System.out.println(" clicked on magic link");
+
+			Thread.sleep(30000);
+			System.out.println("waiting done2");
 
 		}
 
