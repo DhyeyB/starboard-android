@@ -5,16 +5,16 @@
       <![CDATA[==========Starboard Application closed==========]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-08T11:50:23 IST" name="StarboardSuite" finished-at="2024-01-08T11:50:31 IST" duration-ms="8513">
+  <suite started-at="2024-01-08T14:13:34 IST" name="StarboardSuite" finished-at="2024-01-08T14:13:59 IST" duration-ms="24945">
     <groups>
     </groups>
-    <test started-at="2024-01-08T11:50:23 IST" name="Starboard_test_cases" finished-at="2024-01-08T11:50:31 IST" duration-ms="8513">
+    <test started-at="2024-01-08T14:13:34 IST" name="Starboard_test_cases" finished-at="2024-01-08T14:13:59 IST" duration-ms="24945">
       <class name="general.Login_Magic_link">
-        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@6ea94d6a]" started-at="2024-01-08T11:49:12 IST" name="LoginTOApplication" finished-at="2024-01-08T11:50:23 IST" duration-ms="70574" status="PASS">
+        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@65f00478]" started-at="2024-01-08T14:11:07 IST" name="LoginTOApplication" finished-at="2024-01-08T14:13:34 IST" duration-ms="147812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTOApplication -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@6ea94d6a]" started-at="2024-01-08T11:50:31 IST" name="TearDown" finished-at="2024-01-08T11:50:31 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@65f00478]" started-at="2024-01-08T14:13:59 IST" name="TearDown" finished-at="2024-01-08T14:13:59 IST" duration-ms="10" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==========Starboard Application closed==========]]>
@@ -23,7 +23,7 @@
         </test-method> <!-- TearDown -->
       </class> <!-- general.Login_Magic_link -->
       <class name="general.Add_Location">
-        <test-method signature="Update_location()[pri:1, instance:general.Add_Location@7af1cd63]" started-at="2024-01-08T11:50:23 IST" name="Update_location" finished-at="2024-01-08T11:50:31 IST" duration-ms="8449" status="PASS">
+        <test-method signature="Update_location()[pri:1, instance:general.Add_Location@1efdcd5]" started-at="2024-01-08T14:13:34 IST" name="Update_location" finished-at="2024-01-08T14:13:59 IST" duration-ms="24765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Update_location -->
