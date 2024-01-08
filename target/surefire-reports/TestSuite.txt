@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 196.763 s <<< FAILURE! - in TestSuite
-general.Add_Location.Update_location  Time elapsed: 51.644 s  <<< FAILURE!
-java.lang.AssertionError: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Transactions'] (tried for 20 second(s) with 500 milliseconds interval)
-	at general.Add_Location.Update_location(Add_Location.java:156)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.642 s - in TestSuite

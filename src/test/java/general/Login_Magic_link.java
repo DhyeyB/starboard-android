@@ -61,126 +61,16 @@ public class Login_Magic_link
 		}
 	}
 
-	// public static void login() throws Exception
+	public static void login() throws Exception
 
-	// {
-	// 	try
-
-	// 	{
-
-	// 		WebDriverWait wait = new WebDriverWait(driver, 100);
-
-	// 		// Enter Your PIN
-	// 		wait.until(ExpectedConditions
-	// 				.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Enter your new PIN']")));
-
-	// 		// Click on 1
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='1']")).click();
-
-	// 		// Click on 2
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='2']")).click();
-
-	// 		// Click on 3
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='3']")).click();
-
-	// 		// Click on 4
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='4']")).click();
-
-	// 		// Click on 5
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='5']")).click();
-
-	// 		wait.until(ExpectedConditions
-	// 				.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Confirm your new PIN']")));
-
-	// 		// Click on 1
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='1']")).click();
-
-	// 		// Click on 2
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='2']")).click();
-
-	// 		// Click on 3
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='3']")).click();
-
-	// 		// Click on 4
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='4']")).click();
-
-	// 		// Click on 5
-	// 		driver.findElement(By.xpath("//android.widget.TextView[@text='5']")).click();
-
-	// 		wait.until(ExpectedConditions
-	// 				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='PIN Set Up Successful']")));
-
-	// 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Skip']")))
-	// 				.click();
-
-	// 		wait.until(ExpectedConditions.visibilityOfElementLocated(
-	// 				By.xpath("(//*[@resource-id='com.impossible_research.sandbox.starboard:id/head']) [1]")));
-	// 		driver.findElement(By.xpath("(//*[@resource-id='com.impossible_research.sandbox.starboard:id/head']) [1]"))
-	// 				.getText();
-	// 		driver.findElement(By.xpath("(//*[@resource-id='com.impossible_research.sandbox.starboard:id/head']) [1]"))
-	// 				.click();
-	// 		// wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.Button[@text='Allow']")))
-	// 		// 		.click();
-
-	// 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Home']")));
-
-	// 	}
-
-	// 	catch (Exception e1)
-
-	// 	{
-
-	// 		System.out.println(e1);
-	// 		Allure.addAttachment("AllureSelenide",
-	// 				new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-
-	// 	}
-
-	// }
-
-	@BeforeSuite
-	public void LoginTOApplication() throws Exception {
+	{
 		try
 
 		{
-			//String currentDir = System.getProperty("user.dir");
-			//System.out.println("Current working directory: " + currentDir);
-
-			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
-			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the caches
-			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // Virtul Device name
-			// cap.setCapability(MobileCapabilityType.DEVICE_NAME,"R9ZRA09AK2M");
-			cap.setCapability("ignoreHiddenApiPolicyError", true);
-			cap.setCapability("pageLoadStrategy", "none");
-			
-			cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver"); // Server chrome driver Path
-			
-			//cap.setCapability("chromedriverExecutable", currentDir + "/chromedriver-linux64/chromedriver"); // Local chrome driver Path
-
-			cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev1.apk"); // Server App Path
-			//cap.setCapability("app", currentDir + "/apk/Starboard-dev1.apk"); // Local App Path
-			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
-			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
-
-			System.out.println(" App insatlled and open for first time");
-
-			String magic_link = new send_request().sendRequest();
-			
-			System.out.println(" waiting to click ");
-			
-			Thread.sleep(30000);
-
-			System.out.println("waiting done");
-
-			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);			
-			
-			driver.navigate().to(magic_link);
-
-			System.out.println(" clicked on magic link");
 
 			WebDriverWait wait = new WebDriverWait(driver, 100);
 
+			// Enter Your PIN
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Enter your new PIN']")));
 
@@ -229,10 +119,61 @@ public class Login_Magic_link
 					.getText();
 			driver.findElement(By.xpath("(//*[@resource-id='com.impossible_research.sandbox.starboard:id/head']) [1]"))
 					.click();
-			// wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.Button[@text='Allow']")))
-			// 		.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.Button[@text='Allow']")))
+					.click();
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Home']")));
+
+		}
+
+		catch (Exception e1)
+
+		{
+
+			System.out.println(e1);
+			Allure.addAttachment("AllureSelenide",
+					new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+
+		}
+
+	}
+
+	@BeforeSuite
+	public void LoginTOApplication() throws Exception {
+		try
+
+		{
+			String currentDir = System.getProperty("user.dir");
+			System.out.println("Current working directory: " + currentDir);
+
+			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
+			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the caches
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // Virtul Device name
+			// cap.setCapability(MobileCapabilityType.DEVICE_NAME,"R9ZRA09AK2M");
+			cap.setCapability("ignoreHiddenApiPolicyError", true);
+			cap.setCapability("pageLoadStrategy", "none");
+			// cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver"); // Server chrome driver Path
+			
+			cap.setCapability("chromedriverExecutable", currentDir + "/chromedriver-linux64/chromedriver"); // Local chrome driver Path
+
+			// cap.setCapability("app", "/Users/runner/work/starboard-android/starboard-android/apk/Starboard-dev.apk"); // Server App Path
+			cap.setCapability("app", currentDir + "/apk/Starboard-dev1.apk"); // Local App Path
+			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
+			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
+
+			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
+
+			String magic_link = new send_request().sendRequest();
+			
+			System.out.println(" waiting to click ");
+			
+			Thread.sleep(30000);
+			System.out.println("waiting done");
+			
+			driver.navigate().to(magic_link);
+			
+			System.out.println(" clicked on magic link");
 
 		}
 
@@ -277,7 +218,7 @@ public class Login_Magic_link
 		System.out.println("Run time Core system 2: " + arch );
 
         
-		//driver.terminateApp("com.google.android.gm");
+		// driver.terminateApp("com.google.android.gm");
 
 		//Reporter.log("==========Gmail Application closed==========", true);
 
