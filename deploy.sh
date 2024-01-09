@@ -8,8 +8,8 @@ yes | $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
 # sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager "extras;android;m2repository" "extras;google;m2repository"
 
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager --list | grep system-images
-$ANDROID_SDK_ROOT/tools/bin/sdkmanager "platform-tools" "platforms;android-33"  "build-tools;30.0.3" "emulator"
 java -version
+$ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
 $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis_playstore;x86_64" -f
 $ANDROID_SDK_ROOT/tools/emulator -list-avds
 
