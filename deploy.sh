@@ -1,7 +1,7 @@
 # cd /Users/runner/work
 
-apt-get update
-apt install openjdk-8-jdk
+sudo apt-get update
+sudo apt install openjdk-8-jdk
 
 wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 unzip sdk-tools-linux-4333796.zip -d Android
