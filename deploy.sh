@@ -19,7 +19,8 @@ sudo gpasswd -a $USER kvm
 sudo chmod 0660 /dev/kvm
 sudo chown runner:kvm /dev/kvm
 pip3 install opencv-python-headless
-qmake --version
+sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+# qmake --version
 
 # sudo apt-get install qt5-default
 # newgrp kvm 
