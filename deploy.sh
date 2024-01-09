@@ -26,3 +26,4 @@ sudo ls $ANDROID_SDK_ROOT
 
 avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64"
 emulator -avd testavd -no-window -cores 6 &
+avd devices
