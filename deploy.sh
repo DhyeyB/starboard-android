@@ -19,7 +19,7 @@ sudo gpasswd -a $USER kvm
 sudo chmod 0660 /dev/kvm
 sudo chown runner:kvm /dev/kvm
 pip3 install opencv-python-headless
-sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools -y
+sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 # qmake --version
 
 # sudo apt-get install qt5-default
@@ -28,6 +28,7 @@ sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools -y
 echo "emulator starting"
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
 echo "emulator started"
+$ANDROID_SDK_ROOT/platform-tools/adb devices
 sleep 15
 sudo apt-get -y install scrot
 scrot screenshot.png
