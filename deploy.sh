@@ -9,7 +9,7 @@ java -version
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
 echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64" -f
 $ANDROID_SDK_ROOT/tools/emulator -list-avds
-sudo $ANDROID_SDK_ROOT/emulator -avd testavd -no-window -cores 6 &
+$ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
 sleep 15
 gnome-screenshot --file screenshot.png
 # adb devices
