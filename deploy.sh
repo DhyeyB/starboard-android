@@ -17,7 +17,7 @@ sudo groupadd -r kvm
 sudo gpasswd -a $USER kvm
 # cat /lib/udev/rules.d/50-udev-default.rules
 sudo chmod 0660 /dev/kvm
-sudo chown root:kvm /dev/kvm
+sudo chown runner:kvm /dev/kvm
 # newgrp kvm 
 # kvm-ok
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
