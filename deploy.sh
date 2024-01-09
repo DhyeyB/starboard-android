@@ -10,7 +10,7 @@ ls -la Android
 
 echo $PWD
 
-# export ANDROID_HOME=$PWD/Android
+export ANDROID_HOME=$PWD/Android
 # export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
 # la -la $ANDROID_HOME
