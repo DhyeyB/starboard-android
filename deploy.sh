@@ -29,6 +29,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 # $JAVA_HOME_8_X64/bin/java -version
 # export JAVA_HOME=$JAVA_HOME_8_X64
 java -version
+sudo ls /usr/lib/jvm
 
 echo $ANDROID_SDK_ROOT
 sudo ls $ANDROID_SDK_ROOT
