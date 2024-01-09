@@ -2,7 +2,7 @@
 
 # sudo apt-get update
 sudo apt install openjdk-8-jdk
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/temurin-8-jdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
 # cat ~/.bashrc
