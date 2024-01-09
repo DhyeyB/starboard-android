@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="99.932" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="94.103" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-13-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/bs/Documents/starboard-dhyey-github/starboard-android/target/surefire/surefirebooter3130234695504257958.jar /home/bs/Documents/starboard-dhyey-github/starboard-android/target/surefire 2024-01-08T16-05-55_587-jvmRun1 surefire6707449074803685512tmp surefire_015622061475872991567tmp"/>
+    <property name="sun.java.command" value="/home/bs/Documents/starboard-dhyey-github/starboard-android/target/surefire/surefirebooter1839886524259745711.jar /home/bs/Documents/starboard-dhyey-github/starboard-android/target/surefire 2024-01-09T16-29-25_292-jvmRun1 surefire5075679777720604579tmp surefire_03822282958248179262tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/bs/Documents/starboard-dhyey-github/starboard-android/target/test-classes:/home/bs/Documents/starboard-dhyey-github/starboard-android/target/classes:/home/bs/.m2/repository/io/appium/java-client/7.6.0/java-client-7.6.0.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/bs/.m2/repository/com/google/code/gson/gson/2.8.8/gson-2.8.8.jar:/home/bs/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/bs/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/bs/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/bs/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/bs/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/home/bs/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/home/bs/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/home/bs/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/bs/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/home/bs/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/bs/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/bs/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/bs/.m2/repository/org/springframework/spring-context/5.3.10/spring-context-5.3.10.jar:/home/bs/.m2/repository/org/springframework/spring-aop/5.3.10/spring-aop-5.3.10.jar:/home/bs/.m2/repository/org/springframework/spring-beans/5.3.10/spring-beans-5.3.10.jar:/home/bs/.m2/repository/org/springframework/spring-core/5.3.10/spring-core-5.3.10.jar:/home/bs/.m2/repository/org/springframework/spring-jcl/5.3.10/spring-jcl-5.3.10.jar:/home/bs/.m2/repository/org/springframework/spring-expression/5.3.10/spring-expression-5.3.10.jar:/home/bs/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/bs/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/bs/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/bs/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/bs/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/bs/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/bs/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/bs/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/bs/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/bs/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/bs/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/bs/.m2/repository/com/github/automatedowl/allure-environment-writer/1.0.0/allure-environment-writer-1.0.0.jar:/home/bs/.m2/repository/com/codeborne/selenide/5.25.0/selenide-5.25.0.jar:/home/bs/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/bs/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar:/home/bs/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/home/bs/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/bs/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/bs/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/bs/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1/httpclient5-5.1.jar:/home/bs/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.1/httpcore5-5.1.1.jar:/home/bs/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/bs/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/bs/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/bs/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/home/bs/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/home/bs/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/bs/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/bs/.m2/repository/org/json/json/20231013/json-20231013.jar:/home/bs/.m2/repository/io/qameta/allure/allure-testng/2.15.0/allure-testng-2.15.0.jar:/home/bs/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/home/bs/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/home/bs/.m2/repository/io/qameta/allure/allure-test-filter/2.15.0/allure-test-filter-2.15.0.jar:/home/bs/.m2/repository/io/qameta/allure/allure-selenide/2.17.3/allure-selenide-2.17.3.jar:/home/bs/.m2/repository/org/aspectj/aspectjweaver/1.9.8.RC1/aspectjweaver-1.9.8.RC1.jar:/home/bs/.m2/repository/org/slf4j/slf4j-simple/1.7.21/slf4j-simple-1.7.21.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/bs/Documents/starboard-dhyey-github/starboard-android/target/surefire/surefirebooter3130234695504257958.jar"/>
+    <property name="surefire.real.class.path" value="/home/bs/Documents/starboard-dhyey-github/starboard-android/target/surefire/surefirebooter1839886524259745711.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.7+5-Ubuntu-0ubuntu120.04"/>
     <property name="user.name" value="bs"/>
@@ -51,28 +51,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="Update_location" classname="general.Add_Location" time="10.357">
+  <testcase name="Update_location" classname="general.Add_Location" time="9.434">
     <system-out><![CDATA[Current working directory: /home/bs/Documents/starboard-dhyey-github/starboard-android
 Encrypted Text: t4R2UY3s4lCmbk7LouyHr++MCndthzrV0U+rfcoEbLg=
 Email token : t4R2UY3s4lCmbk7LouyHr++MCndthzrV0U+rfcoEbLg=
 OK
-{"status":true,"message":"Details Fetched Successfully.","data":{"login_link":"https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3MTAxNjYuNTE3NDQ5LCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.tymDQcUwNLbbJ4xUdxsJdFPh4RfAiHorTdfMJ6oYjHA"}}
+{"status":true,"message":"Details Fetched Successfully.","data":{"login_link":"https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3OTc5NzguNTc1MDcxLCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.Y-XwmGmJ7h6Qm2SK4UFJh65izIp0sy-zybAPnARp4jo"}}
 data
-Link -> {"login_link":"https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3MTAxNjYuNTE3NDQ5LCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.tymDQcUwNLbbJ4xUdxsJdFPh4RfAiHorTdfMJ6oYjHA"}
-String -> {"login_link":"https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3MTAxNjYuNTE3NDQ5LCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.tymDQcUwNLbbJ4xUdxsJdFPh4RfAiHorTdfMJ6oYjHA"}
-Link -> https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3MTAxNjYuNTE3NDQ5LCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.tymDQcUwNLbbJ4xUdxsJdFPh4RfAiHorTdfMJ6oYjHA
+Link -> {"login_link":"https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3OTc5NzguNTc1MDcxLCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.Y-XwmGmJ7h6Qm2SK4UFJh65izIp0sy-zybAPnARp4jo"}
+String -> {"login_link":"https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3OTc5NzguNTc1MDcxLCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.Y-XwmGmJ7h6Qm2SK4UFJh65izIp0sy-zybAPnARp4jo"}
+Link -> https://starboard.activ.space/user/authenticate-token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3MDQ3OTc5NzguNTc1MDcxLCJpZCI6MTMxLCJvcmdfaWQiOm51bGx9.Y-XwmGmJ7h6Qm2SK4UFJh65izIp0sy-zybAPnARp4jo
  waiting to click 
- your are in login void
 waiting done
  clicked on magic link
-waiting done2
 ]]></system-out>
     <system-err><![CDATA[[main] INFO org.testng.internal.Utils - [TestRunner] Running the tests in 'Starboard_test_cases' with parallel mode:none
-[main] INFO org.testng.internal.Utils - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@3ad394e6 priority: 10
+[main] INFO org.testng.internal.Utils - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@5a2f016d priority: 10
 [main] INFO org.testng.internal.Utils - [TestClass] Creating TestClass for [ClassImpl class=general.Login_Magic_link]
 [main] INFO org.testng.internal.Utils - [XmlMethodSelector] Including method general.LoginTOApplication()
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
 [main] INFO org.testng.internal.Utils - [XmlMethodSelector] Including method general.TearDown()
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
@@ -125,9 +123,9 @@ waiting done2
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Invoker 698498109] Keeping method Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@65f00478] for class null
-[main] INFO org.testng.internal.Utils - [Invoker 698498109] Invoking @BeforeSuite Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@65f00478]
-Jan 08, 2024 4:06:05 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+[main] INFO org.testng.internal.Utils - [Invoker 1877240674] Keeping method Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@6ea94d6a] for class null
+[main] INFO org.testng.internal.Utils - [Invoker 1877240674] Invoking @BeforeSuite Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@6ea94d6a]
+Jan 09, 2024 4:29:37 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 [main] INFO org.testng.internal.Utils - [SuiteRunner] Created 1 TestRunners
 [main] INFO org.testng.internal.Utils - [TestRunner] Running test Starboard_test_cases on 2  classes,  included groups:[] excluded groups:[]
@@ -136,12 +134,12 @@ general.Login_Magic_link
 [main] INFO org.testng.TestClass - ======
 [main] INFO org.testng.TestClass - ===== Test class
 general.Add_Location
-[main] INFO org.testng.TestClass -     @Test Add_Location.Update_location()[pri:1, instance:general.Add_Location@1efdcd5]
+[main] INFO org.testng.TestClass -     @Test Add_Location.Update_location()[pri:1, instance:general.Add_Location@7af1cd63]
 [main] INFO org.testng.TestClass - ======
 [main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
-[main] INFO org.testng.internal.Utils - [Invoker 698498109] No configuration methods found
-[main] INFO org.testng.internal.Utils - [Invoker 698498109] No configuration methods found
-[main] INFO org.testng.internal.Utils - [Invoker 698498109] Invoking general.Add_Location.Update_location
+[main] INFO org.testng.internal.Utils - [Invoker 1877240674] No configuration methods found
+[main] INFO org.testng.internal.Utils - [Invoker 1877240674] No configuration methods found
+[main] INFO org.testng.internal.Utils - [Invoker 1877240674] Invoking general.Add_Location.Update_location
 ]]></system-err>
   </testcase>
 </testsuite>

@@ -16,7 +16,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.codeborne.selenide.testng.TextReport;
-import io.appium.java_client.android.Activity;
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -69,8 +69,6 @@ public class Login_Magic_link
 		{
 
 			WebDriverWait wait = new WebDriverWait(driver, 100);
-
-			System.out.println(" You are in void login ");
 
 			// Enter Your PIN
 			wait.until(ExpectedConditions
@@ -126,7 +124,6 @@ public class Login_Magic_link
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Home']")));
 
-
 		}
 
 		catch (Exception e1)
@@ -164,27 +161,18 @@ public class Login_Magic_link
 			cap.setCapability("app", currentDir + "/apk/Starboard-dev1.apk"); // Local App Path
 			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
-			//cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.signin.view.SignInActivity"); // Starboard login activity
-
 
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
 
 			String magic_link = new send_request().sendRequest();
 			
 			System.out.println(" waiting to click ");
-
-			System.out.println(" your are in login void");
-
-			Thread.sleep(30000);
+			
+			Thread.sleep(60000);
 			System.out.println("waiting done");
 			
 			driver.navigate().to(magic_link);
-			
 			System.out.println(" clicked on magic link");
-
-			Thread.sleep(30000);
-			System.out.println("waiting done2");
-		
 
 		}
 
