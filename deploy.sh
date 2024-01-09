@@ -9,6 +9,14 @@ java -version
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
 echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64" -f
 $ANDROID_SDK_ROOT/tools/emulator -list-avds
+id -un
+id -gn
+gpasswd -a $USER kvm
+cat /lib/udev/rules.d/50-udev-default.rules
+chmod 0660 /dev/kvm
+chown root:kvm /dev/kvm
+newgrp kvm 
+kvm-ok
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
 sleep 15
 apt-get -y install gnome-screenshot
