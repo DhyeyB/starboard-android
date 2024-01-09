@@ -19,16 +19,18 @@ sudo gpasswd -a $USER kvm
 sudo chmod 0660 /dev/kvm
 sudo chown runner:kvm /dev/kvm
 pip3 install opencv-python-headless
-sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools -y
 # qmake --version
 
 # sudo apt-get install qt5-default
 # newgrp kvm 
 # kvm-ok
+echo "emulator starting"
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
+echo "emulator started"
 sleep 15
-sudo apt-get -y install gnome-screenshot
-gnome-screenshot --file screenshot.png
+sudo apt-get -y install scrot
+scrot screenshot.png
 # adb devices
 
 
