@@ -18,8 +18,8 @@ sudo gpasswd -a $USER kvm
 # cat /lib/udev/rules.d/50-udev-default.rules
 sudo chmod 0660 /dev/kvm
 sudo chown runner:kvm /dev/kvm
-pip3 install opencv-python==4.1.2.30  
-sudo apt-get install qt5-default
+pip3 install opencv-python 
+# sudo apt-get install qt5-default
 # newgrp kvm 
 # kvm-ok
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
