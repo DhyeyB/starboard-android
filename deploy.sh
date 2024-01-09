@@ -1,7 +1,12 @@
 # cd /Users/runner/work
 
 # sudo apt-get update
-# sudo apt install openjdk-8-jdk
+sudo apt install openjdk-8-jdk
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+cat ~/.bashrc
+
 
 # wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 # unzip sdk-tools-linux-4333796.zip -d Android
@@ -33,4 +38,4 @@ sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager --list | grep system-images
 # /usr/local/lib/android/sdk/tools/emulator -avd testavd -no-window -cores 6 &
 # adb devices
 
-cat ~/.bashrc
+
