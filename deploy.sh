@@ -17,8 +17,9 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_
 #export ANDROID_HOME=$PWD/Android
 # export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
-ls -la $ANDROID_HOME
-ls -la $ANDROID_HOME/tools
-ls -la $ANDROID_HOME/tools/bin
+# ls -la $ANDROID_HOME
+# ls -la $ANDROID_HOME/tools
+# ls -la $ANDROID_HOME/tools/bin
 
 echo $ANDROID_SDK_ROOT
+sudo ls $ANDROID_SDK_ROOT
