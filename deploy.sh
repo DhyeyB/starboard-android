@@ -11,6 +11,7 @@ echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n testavd -k "sys
 $ANDROID_SDK_ROOT/tools/emulator -list-avds
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
 sleep 15
+apt-get -y install gnome-screenshot
 gnome-screenshot --file screenshot.png
 # adb devices
 
