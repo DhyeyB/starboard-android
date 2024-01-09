@@ -1,4 +1,4 @@
-cd /Users/runner/work
+# cd /Users/runner/work
 
 apt-get update
 apt install openjdk-8-jdk
