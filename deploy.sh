@@ -36,5 +36,6 @@ sudo apt-get -y install scrot
 scrot screenshot.png
 # adb devices
 
+
 # sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-33"  "build-tools;30.0.3" "emulator"
 # sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
