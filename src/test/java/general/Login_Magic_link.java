@@ -150,11 +150,11 @@ public class Login_Magic_link
 			System.out.println("Current working directory: " + currentDir);
 
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the caches
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // Virtul Device name
 			// cap.setCapability(MobileCapabilityType.DEVICE_NAME,"R9ZRA09AK2M");
-			cap.setCapability("ignoreHiddenApiPolicyError", true);
+			// cap.setCapability("ignoreHiddenApiPolicyError", true);
 			cap.setCapability("pageLoadStrategy", "none");
 			// cap.setCapability("chromedriverExecutable",	"/Users/runner/work/starboard-android/starboard-android/chromedriver-linux64/chromedriver"); // Server chrome driver Path
 			
@@ -167,7 +167,7 @@ public class Login_Magic_link
 			//cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.signin.view.SignInActivity"); // Starboard login activity
 
 
-			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
+			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
 
 			String magic_link = new send_request().sendRequest();
 			
