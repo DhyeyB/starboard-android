@@ -21,6 +21,7 @@ sudo gpasswd -a $USER kvm
 sudo chmod 0660 /dev/kvm
 sudo chown runner:kvm /dev/kvm
 pip3 install opencv-python-headless
+pip install opencv-python-headless
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 # qmake --version
 
@@ -28,7 +29,7 @@ sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 # newgrp kvm 
 # kvm-ok
 echo "emulator starting"
-$ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
+$ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 
 echo "emulator started"
 $ANDROID_SDK_ROOT/platform-tools/adb devices
 sleep 15
