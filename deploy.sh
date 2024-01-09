@@ -24,6 +24,8 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_
 echo $ANDROID_SDK_ROOT
 sudo ls $ANDROID_SDK_ROOT
 
-avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64"
-emulator -avd testavd -no-window -cores 6 &
+sudo ls /usr/local/lib/android/sdk/tools
+
+/usr/local/lib/android/sdk/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64"
+/usr/local/lib/android/sdk/tools/emulator -avd testavd -no-window -cores 6 &
 avd devices
