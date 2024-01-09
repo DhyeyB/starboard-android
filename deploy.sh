@@ -24,7 +24,7 @@ pip3 install opencv-python-headless
 # kvm-ok
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
 sleep 15
-apt-get -y install gnome-screenshot
+sudo apt-get -y install gnome-screenshot
 gnome-screenshot --file screenshot.png
 # adb devices
 
