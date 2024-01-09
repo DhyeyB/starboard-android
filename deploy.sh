@@ -13,10 +13,11 @@ D_NAME=$(id -un)
 echo $D_NAME
 G_NAME=$(id -gn)
 echo $G_NAME
-# gpasswd -a $USER kvm
-cat /lib/udev/rules.d/50-udev-default.rules
+groupadd -r kvm
+gpasswd -a $USER kvm
+# cat /lib/udev/rules.d/50-udev-default.rules
 chmod 0660 /dev/kvm
-chown root:$G_NAME /dev/kvm
+chown root:kvm /dev/kvm
 # newgrp kvm 
 # kvm-ok
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
