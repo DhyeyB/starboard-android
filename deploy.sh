@@ -32,8 +32,8 @@ $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 &
 echo "emulator started"
 $ANDROID_SDK_ROOT/platform-tools/adb devices
 sleep 15
-sudo apt-get -y install scrot
-scrot screenshot.png
+sudo apt-get -y install maim
+maim --format=png > screenshot.png
 # adb devices
 
 
