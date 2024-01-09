@@ -31,7 +31,7 @@ sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 echo "emulator starting"
 $ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 
 echo "emulator started"
-$ANDROID_SDK_ROOT/platform-tools/adb devices
+# $ANDROID_SDK_ROOT/platform-tools/adb devices
 # sleep 15
 # sudo apt-get -y install maim
 # maim --format=png > screenshot.png
