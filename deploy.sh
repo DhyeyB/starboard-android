@@ -33,12 +33,12 @@ echo $ANDROID_SDK_ROOT
 sudo ls $ANDROID_SDK_ROOT
 
 sudo ls /usr/local/lib/android/sdk/tools
-yes | /usr/local/lib/android/sdk/tools/bin/sdkmanager --licenses
+sudo yes | /usr/local/lib/android/sdk/tools/bin/sdkmanager --licenses
 sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager --list | grep system-images
 # sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-33"  "build-tools;30.0.3" "emulator"
 # sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
-/usr/local/lib/android/sdk/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64" -f
-/usr/local/lib/android/sdk/emulator/emulator -list-avds
+/sudo usr/local/lib/android/sdk/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64" -f
+sudo /usr/local/lib/android/sdk/emulator/emulator -list-avds
 
 # /usr/local/lib/android/sdk/tools/emulator -avd testavd -no-window -cores 6 &
 # adb devices
