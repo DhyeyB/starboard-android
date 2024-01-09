@@ -5,7 +5,7 @@ sudo apt install openjdk-8-jdk
 export JAVA_HOME=/usr/lib/jvm/temurin-8-jdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 echo $JAVA_HOME
-sudo touch /root/.android/repositories.cfg
+touch /root/.android/repositories.cfg
 
 # cat ~/.bashrc
 
