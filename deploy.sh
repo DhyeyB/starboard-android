@@ -1,9 +1,9 @@
 # cd /Users/runner/work
 
 # sudo apt-get update
-# sudo apt install openjdk-8-jdk
-# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# export PATH=$JAVA_HOME/bin:$PATH
+sudo apt install openjdk-8-jdk
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
 
 # cat ~/.bashrc
 
@@ -26,8 +26,8 @@
 # ls -la $ANDROID_HOME/tools
 # ls -la $ANDROID_HOME/tools/bin
 
-$JAVA_HOME_8_X64/bin/java -version
-export JAVA_HOME=$JAVA_HOME_8_X64
+# $JAVA_HOME_8_X64/bin/java -version
+# export JAVA_HOME=$JAVA_HOME_8_X64
 
 echo $ANDROID_SDK_ROOT
 sudo ls $ANDROID_SDK_ROOT
