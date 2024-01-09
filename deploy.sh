@@ -1,32 +1,8 @@
-# cd /Users/runner/work
-
-# sudo apt-get update
 sudo apt install openjdk-8-jdk
-export JAVA_HOME=/usr/lib/jvm/temurin-8-jdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 echo $JAVA_HOME
 touch /root/.android/repositories.cfg
-
-# cat ~/.bashrc
-
-
-# wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
-# unzip sdk-tools-linux-4333796.zip -d Android
-
-# ls -la Android
-
-# echo $PWD
-
-# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# export PATH=$JAVA_HOME/bin:$PATH
-# export ANDROID_HOME=$HOME/Android
-# export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
-#export ANDROID_HOME=$PWD/Android
-# export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
-
-# ls -la $ANDROID_HOME
-# ls -la $ANDROID_HOME/tools
-# ls -la $ANDROID_HOME/tools/bin
 
 # $JAVA_HOME_8_X64/bin/java -version
 # export JAVA_HOME=$JAVA_HOME_8_X64
@@ -38,12 +14,10 @@ sudo ls $ANDROID_SDK_ROOT
 
 sudo ls $ANDROID_SDK_ROOT/tools
 sudo yes | $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
-sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager --update
-sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager "extras;android;m2repository" "extras;google;m2repository"
+# sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager --update
+# sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager "extras;android;m2repository" "extras;google;m2repository"
 
 sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager --list | grep system-images
-# sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-33"  "build-tools;30.0.3" "emulator"
-# sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
 sudo $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis_playstore;x86_64" -f
 sudo $ANDROID_SDK_ROOT/tools/emulator -list-avds
 
@@ -51,3 +25,5 @@ sudo $ANDROID_SDK_ROOT/tools/emulator -list-avds
 # adb devices
 
 
+# sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-33"  "build-tools;30.0.3" "emulator"
+# sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
