@@ -18,6 +18,14 @@ jobs:
     - run: |
         sh deploy.sh
 
+    - name: Upload Appium Logs
+      if: always()
+      uses: actions/upload-artifact@master
+      with:
+        name: screenshot
+        path: |
+          screenshot.png
+
     # - name: Set up JDK 19
     #   uses: actions/setup-java@v3
     #   with:
