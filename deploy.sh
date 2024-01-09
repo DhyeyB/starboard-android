@@ -10,7 +10,11 @@ ls -la Android
 
 echo $PWD
 
-export ANDROID_HOME=$PWD/Android
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+export ANDROID_HOME=$HOME/Android
+export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+#export ANDROID_HOME=$PWD/Android
 # export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
 # la -la $ANDROID_HOME
