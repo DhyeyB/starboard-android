@@ -145,6 +145,7 @@ public class Login_Magic_link
 		{
 			String currentDir = System.getProperty("user.dir");
 			System.out.println("Current working directory: " + currentDir);
+			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
 
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
@@ -161,8 +162,6 @@ public class Login_Magic_link
 			cap.setCapability("app", currentDir + "/apk/Starboard-dev1.apk"); // Local App Path
 			cap.setCapability("appPackage", "com.impossible_research.sandbox.starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible_research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
-
-			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub/"), cap);
 
 			String magic_link = new send_request().sendRequest();
 			
