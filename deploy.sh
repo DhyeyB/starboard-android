@@ -10,7 +10,7 @@ yes | $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager --list | grep system-images
 java -version
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
-no | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64" -f
+echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n testavd -k "system-images;android-33;google_apis;x86_64" -f
 $ANDROID_SDK_ROOT/tools/emulator -list-avds
 
 # /usr/local/lib/android/sdk/tools/emulator -avd testavd -no-window -cores 6 &
