@@ -2,6 +2,8 @@ sudo apt install openjdk-8-jdk
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 echo $JAVA_HOME
+sudo ls $ANDROID_SDK_ROOT
+sudo ls $ANDROID_SDK_ROOT/platform-tools
 java -version
 yes | $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager --list | grep system-images
