@@ -20,3 +20,5 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_
 ls -la $ANDROID_HOME
 ls -la $ANDROID_HOME/tools
 ls -la $ANDROID_HOME/tools/bin
+
+echo $ANDROID_SDK_ROOT
