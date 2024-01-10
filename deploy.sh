@@ -31,14 +31,13 @@ export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins
 # newgrp kvm 
 # kvm-ok
 echo "emulator starting"
-ls -la $HOME/.android/avd
+sudo ls -la $HOME/.android/avd
 $ANDROID_SDK_ROOT/tools/emulator -avd starboardavd -no-window
 echo "emulator started"
 # $ANDROID_SDK_ROOT/platform-tools/adb devices
 # sleep 15
 # sudo apt-get -y install maim
 # maim --format=png > screenshot.png
-
 
 # sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-33"  "build-tools;30.0.3" "emulator"
 # sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
