@@ -24,7 +24,6 @@ pip3 install opencv-python-headless
 pip install opencv-python-headless
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 # qmake --version
-
 # sudo apt-get install qt5-default
 # newgrp kvm 
 # kvm-ok
