@@ -23,7 +23,7 @@ sudo chown runner:kvm /dev/kvm
 pip3 install opencv-python-headless
 pip install opencv-python-headless
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5gui5
-which qmake -query
+qmake -query
 export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins
 # sudo apt-get install qt5-default -y
 # qmake --version
