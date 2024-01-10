@@ -28,7 +28,7 @@ sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 # newgrp kvm 
 # kvm-ok
 echo "emulator starting"
-$ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 
+$ANDROID_SDK_ROOT/tools/emulator -avd testavd -no-window -cores 6 -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
 echo "emulator started"
 # $ANDROID_SDK_ROOT/platform-tools/adb devices
 # sleep 15
