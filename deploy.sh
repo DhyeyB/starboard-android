@@ -34,7 +34,6 @@ echo "emulator started"
 # sleep 15
 # sudo apt-get -y install maim
 # maim --format=png > screenshot.png
-# adb devices
 
 
 # sudo /usr/local/lib/android/sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-33"  "build-tools;30.0.3" "emulator"
