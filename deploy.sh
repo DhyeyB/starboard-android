@@ -8,8 +8,8 @@ java -version
 yes | $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager --list | grep system-images
 java -version
-$ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-29;google_apis;x86_64"
-echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n starboardavd -k "system-images;android-29;google_apis;x86_64" -f
+$ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
+echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n starboardavd -k "system-images;android-33;google_apis;x86_64" -f
 $ANDROID_SDK_ROOT/tools/emulator -list-avds
 D_NAME=$(id -un)
 echo $D_NAME
@@ -30,7 +30,7 @@ sudo apt-get install qt5-default -y
 # kvm-ok
 echo "emulator starting"
 ls -la $HOME/.android/avd
-$ANDROID_SDK_ROOT/tools/emulator -avd starboardavd -no-window -cores 6 -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+$ANDROID_SDK_ROOT/tools/emulator -avd starboardavd -no-window
 echo "emulator started"
 # $ANDROID_SDK_ROOT/platform-tools/adb devices
 # sleep 15
