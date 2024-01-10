@@ -8,8 +8,8 @@ java -version
 yes | $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses
 $ANDROID_SDK_ROOT/tools/bin/sdkmanager --list | grep system-images
 java -version
-$ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-33;google_apis;x86_64"
-echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n starboardavd -k "system-images;android-29;google_apis_playstore;x86_64" -f
+$ANDROID_SDK_ROOT/tools/bin/sdkmanager "system-images;android-29;google_apis;x86_64"
+echo "no" | $ANDROID_SDK_ROOT/tools/bin/avdmanager create avd -n starboardavd -k "system-images;android-29;google_apis;x86_64" -f
 $ANDROID_SDK_ROOT/tools/emulator -list-avds
 D_NAME=$(id -un)
 echo $D_NAME
