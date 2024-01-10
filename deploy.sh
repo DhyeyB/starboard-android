@@ -21,6 +21,7 @@ sudo gpasswd -a $USER kvm
 # cat /lib/udev/rules.d/50-udev-default.rules
 sudo chmod 0660 /dev/kvm
 sudo chown runner:kvm /dev/kvm
+pip install opencv-python==4.1.2.30 
 pip3 install opencv-python-headless
 pip install opencv-python-headless
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5gui5
