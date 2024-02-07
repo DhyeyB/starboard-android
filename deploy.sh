@@ -47,8 +47,8 @@ sudo adduser $USER libvirt
 # sudo adduser -a $USER kvm
 sudo groupadd -r kvm
 sudo gpasswd -a $USER kvm
-# sudo chmod 0660 /dev/kvm
-# sudo chown root:kvm /dev/kvm
+sudo chmod 0660 /dev/kvm
+sudo chown $USER:kvm /dev/kvm
 sudo kvm-ok
 cat /lib/udev/rules.d/50-udev-default.rules
 
