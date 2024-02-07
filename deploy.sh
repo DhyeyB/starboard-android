@@ -51,6 +51,9 @@ sudo chmod 0660 /dev/kvm
 sudo chown $USER:kvm /dev/kvm
 sudo kvm-ok
 cat /lib/udev/rules.d/50-udev-default.rules
+grep kvm /etc/group
+getent group kvm
+
 
 echo "=========================================="
 echo "======== Emulator started ======="
