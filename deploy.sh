@@ -59,7 +59,8 @@ sudo apt-get install qt5-default
 sudo apt-get install -y libxcb-cursor0
 sudo chmod -R 777 /home/runner/work/starboard-android/starboard-android/android-sdk
 ls -la /home/runner/work/starboard-android/starboard-android/android-sdk/emulator/lib64/qt/plugins/platforms
-sudo cp -r cpu0 /sys/devices/system/cpu/cpu0
+sudo rm -rf /sys/devices/system/cpu/cpu0
+sudo cp -r cpu0 /sys/devices/system/cpu/
 
 echo "=========================================="
 echo "======== Emulator started ======="
