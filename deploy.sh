@@ -59,8 +59,8 @@ sudo apt-get install qt5-default
 sudo apt-get install -y libxcb-cursor0
 sudo chmod -R 777 /home/runner/work/starboard-android/starboard-android/android-sdk
 ls -la /home/runner/work/starboard-android/starboard-android/android-sdk/emulator/lib64/qt/plugins/platforms
-sudo rm -rf /sys/devices/system/cpu/cpu0
-sudo cp -r cpu0 /sys/devices/system/cpu/
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 echo "=========================================="
 echo "======== Emulator started ======="
