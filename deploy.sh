@@ -50,6 +50,7 @@ sudo gpasswd -a $USER kvm
 # sudo chmod 0660 /dev/kvm
 # sudo chown root:kvm /dev/kvm
 sudo kvm-ok
+cat /lib/udev/rules.d/50-udev-default.rules
 
 echo "=========================================="
 echo "======== Emulator started ======="
