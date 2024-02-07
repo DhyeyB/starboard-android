@@ -66,6 +66,7 @@ echo "=========================================="
 echo "======== Emulator started ======="
 echo "=========================================="
 
+avdmanager list avd
 /home/runner/work/starboard-android/starboard-android/android-sdk/tools/emulator -avd testEmulator -no-window -cores 6
 
 # sudo ls $ANDROID_SDK_ROOT
