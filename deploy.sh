@@ -36,10 +36,13 @@ echo "======== avdmanager configuration ======="
 echo "=========================================="
 
 echo "no" | avdmanager create avd -n testEmulator -k "system-images;android-33;google_apis;x86_64"
-avdmanager adb list
+avdmanager list avd
 
 
-
+sudo apt install cpu-checker
+ls /dev/
+kvm-ok
+sudo kvm-ok
 
 
 
