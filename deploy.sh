@@ -61,7 +61,7 @@ sudo chmod -R 777 /home/runner/work/starboard-android/starboard-android/android-
 ls -la /home/runner/work/starboard-android/starboard-android/android-sdk/emulator/lib64/qt/plugins/platforms
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-ls /sys/devices/system/cpu/cpu0/cpufreq/
+ls /sys/devices/system/cpu/cpu0/
 
 echo "=========================================="
 echo "======== Emulator started ======="
