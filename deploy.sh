@@ -45,8 +45,8 @@ kvm-ok
 sudo kvm-ok
 sudo adduser $USER libvirt
 sudo adduser -a $USER kvm
-sudo chmod 0660 /dev/kvm
-sudo chown root:kvm /dev/kvm
+# sudo chmod 0660 /dev/kvm
+# sudo chown root:kvm /dev/kvm
 sudo kvm-ok
 
 echo "=========================================="
