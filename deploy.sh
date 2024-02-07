@@ -39,9 +39,14 @@ echo "no" | avdmanager create avd -n testEmulator -k "system-images;android-33;g
 avdmanager list avd
 
 
-sudo apt install cpu-checker
+sudo apt install cpu-checker bridge-utils libpulse0 qemu-kvm libvirt-daemon-system libvirt-clients virtinst
 ls /dev/
 kvm-ok
+sudo kvm-ok
+sudo adduser $USER libvirt
+sudo adduser -a $USER kvm
+sudo chmod 0660 /dev/kvm
+sudo chown root:kvm /dev/kvm
 sudo kvm-ok
 
 echo "=========================================="
