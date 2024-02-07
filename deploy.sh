@@ -53,7 +53,9 @@ sudo kvm-ok
 cat /lib/udev/rules.d/50-udev-default.rules
 grep kvm /etc/group
 getent group kvm
-
+pip install opencv-python==4.7.0.72
+pip install opencv-python-headless
+sudo apt-get install qt5-default
 
 echo "=========================================="
 echo "======== Emulator started ======="
