@@ -44,8 +44,11 @@ ls /dev/
 kvm-ok
 sudo kvm-ok
 
+echo "=========================================="
+echo "======== Emulator started ======="
+echo "=========================================="
 
-
+./emulator -avd testEmulator -no-window -cores 6
 
 # sudo ls $ANDROID_SDK_ROOT
 # sudo ls $ANDROID_SDK_ROOT/platform-tools
