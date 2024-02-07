@@ -10,6 +10,10 @@ wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 ls
 unzip sdk-tools-linux-4333796.zip -d android-sdk
 ls android-sdk
+ls android-sdk/tools
+ls android-sdk/tools/bin
+pwd
+# export ANDROID_HOME=$PWD/Android
 
 # sudo ls $ANDROID_SDK_ROOT
 # sudo ls $ANDROID_SDK_ROOT/platform-tools
