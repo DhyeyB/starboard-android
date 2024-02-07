@@ -56,6 +56,7 @@ getent group kvm
 pip install opencv-python==4.7.0.72
 pip install opencv-python-headless
 sudo apt-get install qt5-default
+sudo chmod -R 777 /home/runner/work/starboard-android/starboard-android/android-sdk
 ls -la /home/runner/work/starboard-android/starboard-android/android-sdk/emulator/lib64/qt/plugins/platforms
 
 echo "=========================================="
