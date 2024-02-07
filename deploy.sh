@@ -1,11 +1,15 @@
+echo "=========================================="
 echo "======== Java Installation steps ======="
+echo "=========================================="
 sudo apt install openjdk-8-jdk
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 echo $JAVA_HOME
 java -version
 
-echo "======= Android sdk steps ======="
+echo "=========================================="
+echo "======= Android sdk Installation ======="
+echo "=========================================="
 wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 ls
 unzip sdk-tools-linux-4333796.zip -d android-sdk
@@ -15,7 +19,14 @@ ls android-sdk/tools/bin
 pwd
 export ANDROID_HOME=/home/runner/work/starboard-android/starboard-android/android-sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+
+echo "=========================================="
+echo "======== Android sdk configuration ======="
+echo "=========================================="
 sdkmanager --list
+yes | sdkmanager --licenses
+sdkmanager "platform-tools" "platforms;android-33" "build-tools;30.0.3" "emulator" "system-images;android-33;google_apis;x86_64"
+ls android-sdk
 
 # sudo ls $ANDROID_SDK_ROOT
 # sudo ls $ANDROID_SDK_ROOT/platform-tools
