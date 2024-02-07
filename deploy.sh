@@ -28,14 +28,14 @@ echo "=========================================="
 
 sdkmanager --list
 yes | sdkmanager --licenses
-sdkmanager "platform-tools" "platforms;android-33" "build-tools;30.0.3" "emulator" "system-images;android-33;google_apis;x86_64"
+sdkmanager "platform-tools" "platforms;android-33" "build-tools;30.0.3" "emulator" "system-images;android-33;default;x86_64"
 ls android-sdk
 
 echo "=========================================="
 echo "======== avdmanager configuration ======="
 echo "=========================================="
 
-echo "no" | avdmanager create avd -n testEmulator -k "system-images;android-33;google_apis;x86_64"
+echo "no" | avdmanager create avd -n testEmulator -k "system-images;android-33;default;x86_64"
 avdmanager list avd
 
 
