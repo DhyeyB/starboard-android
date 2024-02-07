@@ -13,7 +13,9 @@ ls android-sdk
 ls android-sdk/tools
 ls android-sdk/tools/bin
 pwd
-# export ANDROID_HOME=$PWD/Android
+export ANDROID_HOME=/home/runner/work/starboard-android/starboard-android/android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+sdkmanager --list
 
 # sudo ls $ANDROID_SDK_ROOT
 # sudo ls $ANDROID_SDK_ROOT/platform-tools
