@@ -26,17 +26,17 @@ echo "=========================================="
 echo "======== sdkmanager configuration ======="
 echo "=========================================="
 
-sudo sdkmanager --list
-sudo yes | sdkmanager --licenses
-sudo sdkmanager "platform-tools" "platforms;android-33" "build-tools;30.0.3" "emulator" "system-images;android-33;google_apis;x86_64"
+sdkmanager --list
+yes | sdkmanager --licenses
+sdkmanager "platform-tools" "platforms;android-33" "build-tools;30.0.3" "emulator" "system-images;android-33;google_apis;x86_64"
 ls android-sdk
 
 echo "=========================================="
 echo "======== avdmanager configuration ======="
 echo "=========================================="
 
-sudo echo "no" | avdmanager create avd -n testEmulator -k "system-images;android-33;google_apis;x86_64"
-sudo avdmanager list avd
+echo "no" | avdmanager create avd -n testEmulator -k "system-images;android-33;google_apis;x86_64"
+avdmanager list avd
 
 
 sudo apt install cpu-checker bridge-utils libpulse0 qemu-kvm libvirt-daemon-system libvirt-clients virtinst
@@ -55,7 +55,7 @@ echo "=========================================="
 echo "======== Emulator started ======="
 echo "=========================================="
 
-sudo /home/runner/work/starboard-android/starboard-android/android-sdk/tools/emulator -avd testEmulator -no-window -cores 6
+/home/runner/work/starboard-android/starboard-android/android-sdk/tools/emulator -avd testEmulator -no-window -cores 6
 
 # sudo ls $ANDROID_SDK_ROOT
 # sudo ls $ANDROID_SDK_ROOT/platform-tools
