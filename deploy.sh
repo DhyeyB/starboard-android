@@ -44,7 +44,9 @@ ls /dev/
 kvm-ok
 sudo kvm-ok
 sudo adduser $USER libvirt
-sudo adduser -a $USER kvm
+# sudo adduser -a $USER kvm
+sudo groupadd -r kvm
+sudo gpasswd -a $USER kvm
 # sudo chmod 0660 /dev/kvm
 # sudo chown root:kvm /dev/kvm
 sudo kvm-ok
@@ -53,7 +55,7 @@ echo "=========================================="
 echo "======== Emulator started ======="
 echo "=========================================="
 
-/home/runner/work/starboard-android/starboard-android/android-sdk/tools/emulator -avd testEmulator -no-window -cores 6
+sudo /home/runner/work/starboard-android/starboard-android/android-sdk/tools/emulator -avd testEmulator -no-window -cores 6
 
 # sudo ls $ANDROID_SDK_ROOT
 # sudo ls $ANDROID_SDK_ROOT/platform-tools
